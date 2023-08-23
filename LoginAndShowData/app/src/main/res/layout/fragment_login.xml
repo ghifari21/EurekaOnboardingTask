@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_text"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_name" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_jurusan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/jurusan"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_semester"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/semester"
+            android:inputType="number"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_jurusan" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/login_text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_semester" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
